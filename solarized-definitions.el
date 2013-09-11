@@ -113,7 +113,7 @@ the \"Gen RGB\" column in solarized-definitions.el to improve them further."
         (rotatef base02 base2)
         (rotatef base01 base1)
         (rotatef base00 base0))
-      (let ((back base03))
+      (let ((back nil))
         (cond ((< (display-color-cells) 16)
                (setf back nil))
               ((eq 'high solarized-contrast)
